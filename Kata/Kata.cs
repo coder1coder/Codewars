@@ -8,7 +8,7 @@ namespace Codewars.Katas
     {
         public static string ReverseWordsLinq(string str)
         {
-            return string.Join(" ", str.Split(' ').Select(i => new string(i.Reverse().ToArray())));
+            return string.Join(" ", str.Split(' ').Select(i => i.Reverse()));
         }
         public static string ReverseWords(string str)
         {
